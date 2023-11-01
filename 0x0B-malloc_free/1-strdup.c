@@ -25,6 +25,7 @@ char *_strdup(char *str)
 	}
 
 	strdout = (char *)malloc(sizeof(char) * (i + 1));
+	if (strdout == NULL)
 	{
 		return (NULL);
 	}
@@ -35,5 +36,3 @@ char *_strdup(char *str)
 	}
 	return (strdout);
 }
-
-
