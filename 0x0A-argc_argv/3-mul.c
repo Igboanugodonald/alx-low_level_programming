@@ -9,19 +9,21 @@
  * Return: Error if argc != 3
  */
 
-int main(int argc, char *argv[]__attribute__((unused)))
+int main(int argc, char *argv[])
 {
-	int i = atoi(argv[1]);
-	int j = atoi(argv[2]);
-	int result = i * j;
+	int i, j, result;
+
+	if (argc != 3)
+        {
+                printf("Error\n");
+                return (1);
+        }
+
+	i = atoi(argv[1]);
+	j = atoi(argv[2]);
+	result = i * j;
 	{
 	printf("%d\n", result);
 	return (0);
-	}
-
-	if (argc != 3)
-	{
-		printf("Error\n");
-		return (1);
 	}
 }
