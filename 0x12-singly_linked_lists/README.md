@@ -1,0 +1,1 @@
+linked list after printf
